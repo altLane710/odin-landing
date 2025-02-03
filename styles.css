@@ -4,6 +4,7 @@
   --hero-text: #F9FAF8;
   --hero-background: #1F2937;
   --text-secondary: #E5E7Eb;
+  --accent: #3882f6;
 }
 
 html {
@@ -24,9 +25,10 @@ body {
 
 header {
   background-color: var(--hero-background);
+  padding: 0 24px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   max-width: 900px;
@@ -39,15 +41,60 @@ a {
   color: var(--text-secondary);
 }
 
-.logo {
+.header__logo {
   font-size: 24px;
   font-weight: 900;
   margin-right: auto;
   color: var(--hero-text);
 }
 
-.nav-links {
+.header__nav-links {
   display: flex;
   list-style: none;
   gap: 16px
+}
+
+.hero {
+  background-color: var(--hero-background);
+  padding: 0 24px;
+}
+
+.hero__container {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 16px;
+  padding: 72px 0;
+  justify-content: space-between;
+}
+
+.hero__left {
+  width: 50%;
+}
+
+.hero__image {
+  width: 550px;
+  height: 250px;
+}
+
+.hero__heading {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--hero-text);
+}
+
+.hero__description {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.hero__signup-button {
+  font-weight: 700;
+  color: var(--hero-text);
+  padding: 8px 24px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  border: none;
 }
