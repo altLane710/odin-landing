@@ -181,3 +181,39 @@ a {
   font-weight: bold;
   padding-right: 40px;
 }
+
+/* CTA sections rules */
+.cta {
+  padding: 72px 0;
+}
+
+.section__container--cta {
+  color: var(--hero-text);
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 40px 100px;
+  background-color: var(--accent);
+}
+
+.cta__text {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cta__text div:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cta__signup {
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--hero-text);
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid var(--hero-text);
+  border-radius: 8px;
+  padding: 8px 32px;
+  background-color: transparent;
+}
