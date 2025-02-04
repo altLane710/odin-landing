@@ -118,24 +118,35 @@ a {
   padding: 24px 24px;
 }
 
+.info__heading {
+  color: var(--hero-background);
+  margin-bottom: 24px;
+}
+
 .info__list {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 16px;
+  gap: 40px;
 }
 
 .info__item {
   margin: 0;
+  width: 150px;
+  text-align: center;
 }
 
 .info__image {
-  border: 2px solid var(--accent);
-  border-radius: 8px;
-  width: 100px;
-  height: 100px;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .info__caption {
-  font-size: 12px;
+  font-size: 14px;
+  color: gray;
+  /* color: var(--text-secondary); */
 }
