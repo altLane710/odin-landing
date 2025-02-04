@@ -3,7 +3,7 @@
 :root {
   --hero-text: #F9FAF8;
   --hero-background: #1F2937;
-  --text-secondary: #E5E7Eb;
+  --quote-background: #E5E7Eb;
   --accent: #3882f6;
 }
 
@@ -28,7 +28,7 @@ h2 {
   margin: 0;
 }
 
-/* Section common styles */
+/* Section common rules */
 
 .section {
   padding: 0 24px;
@@ -39,7 +39,7 @@ h2 {
 }
 
 .section__container {
-  max-width: 900px;
+  max-width: 957px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -49,12 +49,12 @@ h2 {
   flex-direction: column;
 }
 
-/* Header section styles */
+/* Header section rules */
 
 a {
   font-size: 18px;
   text-decoration: none;
-  color: var(--text-secondary);
+  color: gray;
 }
 
 .header__logo {
@@ -70,7 +70,7 @@ a {
   gap: 16px
 }
 
-/* Hero section styles */
+/* Hero section rules */
 
 .hero {
   padding: 72px 24px;
@@ -100,7 +100,7 @@ a {
 
 .hero__description {
   font-size: 18px;
-  color: var(--text-secondary);
+  color: var(--quote-background);
 }
 
 .hero__signup-button {
@@ -112,7 +112,7 @@ a {
   border: none;
 }
 
-/* Info section styles */
+/* Info section rules */
 
 .info {
   padding: 24px 24px;
@@ -148,5 +148,36 @@ a {
 .info__caption {
   font-size: 14px;
   color: gray;
-  /* color: var(--text-secondary); */
+}
+
+/* Quote section rules */
+
+.quote {
+  padding: 72px 0;
+}
+
+.section--quote {
+  text-align: left;
+  background-color: var(--quote-background);
+}
+
+.section__container--quote {
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 700px;
+  color: var(--hero-background);
+}
+
+.quote__text {
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote__author {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 40px;
 }
